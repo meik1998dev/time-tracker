@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+### Hi Dear Mohammed :)
 
-## Getting Started
+### Objective
 
-First, run the development server:
+In this challenge, your task is to retrieve data from an external API and render it like the provided designs. Use TypeScript/JaveScript and NextJS.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Brief
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Your challenge is to build out this personal time-tracking dashboard. A perfect opportunity to flex your CSS Grid muscles! Your task is to build the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding`, and `margin`. You will find all the required assets in the `/images` folder. The assets are already optimized. Fetch data from the following endpoint:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+    https://wookie.codesubmit.io/time-tracking
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Expected behavior
 
-## Learn More
+Your users should be able to:
 
-To learn more about Next.js, take a look at the following resources:
+- [ ] View the optimal layout for the site depending on their device's screen size
+- [ ] See hover states for all interactive elements on the page
+- [ ] Switch between viewing Daily, Weekly, and Monthly stats
+- [ ] The text for the previous period's time should change based on the active timeframe. For Daily, it should read "Yesterday" e.g "Yesterday - 2hrs". For Weekly, it should read "Last Week," e.g. "Last Week - 32hrs". It should read "Last Month" for monthly, e.g., "Last Month - 19hrs".
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Evaluation Criteria
 
-## Deploy on Vercel
+- **TypeScript/JavaScript** best practices
+- Show us your work through your commit history
+- Completeness: did you complete the features?
+- Correctness: does the functionality act in sensible, thought-out ways?
+- Maintainability: is it written in a clean, maintainable way?
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### CodeSubmit
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Please organize, design, and document your code as if it were going into production - then send your code as zipped file with replying this email.
