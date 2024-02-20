@@ -1,6 +1,7 @@
 import { fetchActivities } from "./lib/helpers";
 import { ErrorComponent } from "./components/ErrorComponent";
 import { UserMainCard } from "./components/UserMainCard";
+import { ActivitesList } from "./components/ActivitesList";
 
 export default async function Home() {
   const activities = await fetchActivities();
@@ -10,17 +11,13 @@ export default async function Home() {
   }
 
   return (
-    <main className="flex bg-very-dark-blue min-h-screen flex-col items-center justify-center p-24">
-      <div className="grid w-full gap-8 max-w-5xl text-white grid-cols-8 h-[370px] grid-rows-6">
-        <div className="col-span-2 row-span-6">
+    <main className="flex bg-very-dark-blue min-h-screen h-full flex-col items-center justify-center p-4">
+      <div className="grid w-full gap-8 container text-white md:grid-cols-8 grid-cols-1 md:h-[400px] grid-rows-6">
+        <div className="md:col-span-2 row-span-6 col-span-full">
           <UserMainCard />
         </div>
-        <div className="col-span-2 row-span-3 col-start-3">2</div>
-        <div className="col-span-2 row-span-3 col-start-3 row-start-4">3</div>
-        <div className="col-span-2 row-span-3 col-start-5 row-start-1">4</div>
-        <div className="col-span-2 row-span-3 col-start-7 row-start-1">7</div>
-        <div className="col-span-2 row-span-3 col-start-5 row-start-4">8</div>
-        <div className="col-span-2 row-span-3 col-start-7 row-start-4">9</div>
+
+        <ActivitesList activities={activities} />
       </div>
     </main>
   );
