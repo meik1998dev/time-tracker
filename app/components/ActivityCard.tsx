@@ -16,6 +16,7 @@ export const ActivityCard = ({
   const { selectedTime } = useGlobalContext();
   const { current, previous } =
     activity.timeframes[selectedTime as keyof typeof activity.timeframes];
+  const selectedTimeLabel = labels[selectedTime as keyof typeof activity.timeframes];
 
   return (
     <div
@@ -38,7 +39,7 @@ export const ActivityCard = ({
             <h3 className="md:text-4xl text-3xl font-light mt-auto">{current}hrs</h3>
 
             <p className="opacity-50 text-xs">
-              {labels[selectedTime as keyof typeof activity.timeframes]} - {previous}hrs
+              {selectedTimeLabel} - {previous}hrs
             </p>
           </div>
         </div>

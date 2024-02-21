@@ -18,12 +18,12 @@ export const ActivitesList = ({ activities }: { activities: Activity[] }) => {
   };
 
   const colorsMap = {
-    Work: "bg-light-red",
-    Play: "bg-soft-blue",
-    Study: "bg-light-red-study",
-    Exercise: "bg-lime-green",
-    Social: "bg-violet",
-    "Self Care": "bg-soft-orange",
+    Work: "bg-gradient-to-b from-light-red to-transparent",
+    Play: "bg-gradient-to-b from-soft-blue to-transparent",
+    Study: "bg-gradient-to-b from-light-red-study to-transparent",
+    Exercise: "bg-gradient-to-b from-lime-green to-transparent",
+    Social: "bg-gradient-to-b from-violet to-transparent",
+    "Self Care": "bg-gradient-to-b from-soft-orange to-transparent",
   };
 
   return (
