@@ -2,7 +2,7 @@
 import React, { ReactElement } from "react";
 import { Activity } from "../lib/types";
 import { BsThreeDots } from "react-icons/bs";
-import { useGlobalContext } from "../lib/globalContext";
+import { useGlobalContext } from "../lib/hooks/useGlobalContext";
 
 export const ActivityCard = ({
   activity,

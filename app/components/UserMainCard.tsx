@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import { useGlobalContext } from "../lib/globalContext";
+import { useGlobalContext } from "../lib/hooks/useGlobalContext";
 
 export const UserMainCard = () => {
   const timePeriods = ["daily", "weekly", "monthly"];
